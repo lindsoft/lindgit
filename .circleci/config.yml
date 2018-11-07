@@ -7,10 +7,13 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install python desps in venv
+          name: Install python dexps in venv
           command: |
             python -m venv venv
             . venv/bin/activate
+      - run:
+          name install packages
+          command: |
             pip install "django<1.12" "selenium<4"
     
       - run:
