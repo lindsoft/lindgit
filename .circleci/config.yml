@@ -25,11 +25,6 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
 
-      - save_cache:
-          paths:
-            - "./venv"
-            - "/usr/local/bin"
-        
       # run tests!
       # this example uses Django's built-in test-runner
       # other common Python testing frameworks include pytest and nose
