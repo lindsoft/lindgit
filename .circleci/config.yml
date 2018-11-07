@@ -12,7 +12,7 @@ jobs:
             python -m venv venv
             . venv/bin/activate
       - run:
-          name install packages
+          name: install packages
           command: |
             pip install "django<1.12" "selenium<4"
     
