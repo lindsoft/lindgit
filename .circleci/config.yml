@@ -14,7 +14,7 @@ jobs:
       - run:
           name: install packages
           command: |
-            pip install "django<1.12" "selenium<4"
+            pip install --user "django<1.12" "selenium<4"
     
       - run:
           name: "run tests"
