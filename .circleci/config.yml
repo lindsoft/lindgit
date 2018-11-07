@@ -6,7 +6,10 @@ jobs:
 
     steps:
       - checkout
-      - run: pip install "django<1.12" "selenium<4"
+      - run:
+        python3 -m venv venv
+        . venv/bin/activate
+        run: pip install "django<1.12" "selenium<4"
     
       - run:
           name: "run tests"
