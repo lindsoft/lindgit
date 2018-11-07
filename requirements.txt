@@ -1,0 +1,4 @@
+ psutil==5.4.3
+ pyOpenSSL==17.0.0
+ python-coveralls==2.7.0
+ pyYAML==4.2b4
