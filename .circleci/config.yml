@@ -20,9 +20,6 @@ jobs:
     steps:
       - checkout
 
-      # Download and cache dependencies
-      - restore_cache:
-
       - run:
           command: |
             python3 -m venv venv
@@ -30,7 +27,7 @@ jobs:
 
       - save_cache:
           paths:
-            - ./venv
+            - "./venv"
             - "/usr/local/bin"
         
       # run tests!
@@ -42,7 +39,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            python manage.py test
+            python ""manage.py test"
 
       - store_artifacts:
           path: test-reports
